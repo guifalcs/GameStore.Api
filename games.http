@@ -1,1 +1,23 @@
-GET http://localhost:5108
+GET http://localhost:5108/games
+
+###
+POST http://localhost:5108/games
+Content-Type: application/json
+
+{
+  "name": "The Legend of Zelda: Tears of the Kingdom",
+  "genre": "Action-Adventure",
+  "price": 59.99,
+  "releaseDate": "2011-11-18"
+}
+
+###
+PUT http://localhost:5108/games/2
+Content-Type: application/json
+
+{
+  "name": "The Legend of Zelda: Breath of the Wild",
+  "genre": "Action-Adventure",
+  "price": 129.99,
+  "releaseDate": "2017-03-03"
+}
