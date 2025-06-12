@@ -21,3 +21,6 @@ Content-Type: application/json
   "price": 129.99,
   "releaseDate": "2017-03-03"
 }
+
+###
+DELETE http://localhost:5108/games/1
