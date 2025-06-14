@@ -27,6 +27,8 @@ public static class GameEndpoints
 
         group.MapPost("/", (CreateGameDto newGame) =>
         {
+
+
             GameDto game = new GameDto(
                 games.Count + 1,
                 newGame.Name,
@@ -38,7 +40,7 @@ public static class GameEndpoints
             games.Add(game);
 
             return Results.CreatedAtRoute("getGameById", new { id = game.Id }, game);
-        });
+        }).WithParameterValidation();
 
         group.MapPut("/{id}", (int id, UpdateGameDto updatedGame) =>
         {
