@@ -9,5 +9,7 @@ public class Game
 
     public Genre? Genre { get; set; }
 
+    public decimal Price { get; set; }
+
     public DateOnly ReleaseDate { get; set; }
 }
