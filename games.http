@@ -5,9 +5,9 @@ POST http://localhost:5108/games
 Content-Type: application/json
 
 {
-  "name": "The Legend of Zelda: Tears of the Kingdom",
-  "genre": 1,
-  "price": 59.99,
+  "name": "Guifalcs: The legend",
+  "genreId": 2,
+  "price": 99.99,
   "releaseDate": "2011-11-18"
 }
 
